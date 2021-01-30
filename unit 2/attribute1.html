@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + CSS</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            box-sizing: border-box;
+            font-family:'Times New Roman', Times, serif
+
+         }
+         body{
+             background-color: rgb(103, 167, 103);
+         }
+       .section{
+        width:100%;
+        height:100vh;
+        scroll-behavior: smooth;
+        padding:15px 25px;
+        font-size:20px;
+        font-weight: 900;
+       }
+       .section:nth-child(even) {
+       background: #f4f4f4;
+      }
+      .nav-bar{
+        width:100%;
+         margin:15px;
+         display:flex;
+         gap: 10px;
+         justify-content: center;
+      }
+      .nav-link{
+          background:cornflowerblue;
+          border-radius: 5px;
+          color:#fff;
+          text-decoration:none;
+          display:inline-block;
+          text-align:center;
+          text-transform: uppercase;
+          padding: 20px;
+          font-size: 15px;
+          transition:1s;
+          border-left:3px solid rgb(228, 220, 200);
+      }
+     .nav-link:hover{
+         background-color:rgb(37, 53, 82);
+         color:#fff;
+         border-left-width: 10px;
+         
+     }
+      @media screen and (max-width: 1024px){
+          .container{
+              width:90%;
+              margin: auto;
+          }
+      }
+      @media screen and (max-width: 500px){
+          .nav-bar{
+              width:90%;
+
+          }
+          .nav-link{
+              width:19%;
+              height:4vh;
+              font-size:10px;
+              padding:10px 12px 20px 10px;
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="nav-bar">
+    <a href="#home" class="nav-link">home</a>
+    <a href="#about" class="nav-link">about</a>
+    <a href="#service" class="nav-link">service</a>
+    <a href="#blog" class="nav-link">blog</a>
+    <a href="#contact" class="nav-link">contact</a>
+    </div>
+
+    <section class="section" id="home">This is home
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sapiente modi quis saepe et non quaerat ad cupiditate, hic, unde eveniet id repudiandae illum neque cum incidunt quasi? Praesentium, autem.</p>
+    </section>
+    
+    <section class="section" id="about">This is about
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sapiente modi quis saepe et non quaerat ad cupiditate, hic, unde eveniet id repudiandae illum neque cum incidunt quasi? Praesentium, autem.</p>
+    </section>
+    
+    <section class="section" id="service">This is service
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sapiente modi quis saepe et non quaerat ad cupiditate, hic, unde eveniet id repudiandae illum neque cum incidunt quasi? Praesentium, autem.</p>
+    </section>
+    
+    <section class="section" id="blog">This is blog
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sapiente modi quis saepe et non quaerat ad cupiditate, hic, unde eveniet id repudiandae illum neque cum incidunt quasi? Praesentium, autem.</p>
+    </section>
+    
+    <section class="section" id="contact">This is contact
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci sapiente modi quis saepe et non quaerat ad cupiditate, hic, unde eveniet id repudiandae illum neque cum incidunt quasi? Praesentium, autem.</p>
+    </section>
+    </div>
+</body>
+</html>
